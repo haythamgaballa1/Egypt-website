@@ -1,0 +1,306 @@
+:root
+{
+    --heading-color:;
+    --paragraph-color:#777;
+    --section-color-one: #f3f3f3;
+    --section-color-two:;
+    --paragraph-font:'Raleway', sans-serif;
+    --header-font: 'Bebas Neue', 'cursive';
+    --color-gold: gold ;
+    --section-padding:60px
+}
+html
+{
+    scroll-behavior: smooth;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* start header */
+.nav
+{
+    border-bottom: solid rgba(20, 20, 15, 0.5) 1px ;
+}
+.navbar-brand img
+{
+    
+    width: 80px;
+    transition: 1s;
+}
+.navbar-brand img:hover
+{
+    transform: scale(1.4);
+}
+.nav-item
+{
+    padding-left: 16px;
+}
+.navbar-expand-lg .navbar-nav .nav-link
+{
+    color: var(--color-gold);
+    font-weight: 500;
+    position: relative;
+    transition: 2s;
+}
+.navbar-expand-lg .navbar-nav .nav-link:after
+{
+    content: "";
+    width: 0;
+    height: 2px;
+    top: 40px;
+    left: 0;
+    background-color:var(--color-gold);
+    position:absolute;
+    transition: .5s;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover:after
+{
+    width: 100%;   
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover
+{
+    color: rgb(175, 172, 11);
+}
+/* end navbar */
+/* start header */
+header
+{
+    background-image: url(../Images/header1.jpg);
+    background-size: cover;
+}
+.overlay
+{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+.header-content span
+{
+    color: white;
+    text-shadow: 2px 2px 20px #fdf8f8;
+}
+.header-content h1
+{
+    font-family: var(--header-font);
+    color:var(--color-gold) ;
+    font-size: 5rem;
+    font-weight: 800;
+    letter-spacing: 6px;
+}
+.header-content h1:after
+{
+    content:"";
+    animation-name: Egypt;
+    animation-duration: 5s;
+    font-size: 5rem;
+    animation-iteration-count: infinite;
+    color: black;
+    letter-spacing: 10px;
+    text-shadow: 1px 2px 20px #fa0101;
+    font-weight: 600;
+}
+@keyframes Egypt {
+    0% { content:""; }
+    20% { content:"E"; }
+    40% { content:"EG"; }
+    60% { content:"EGY"; }
+    80% { content:"EGYP"; }
+    100% { content:"EGYPT"; }
+    80% { content:"EGYP"; }
+    60% { content:"EGY"; }
+    40% { content:"EG"; }
+    20% { content:"E"; }
+    0% { content:""; }
+}
+
+@media (max-width:667px) 
+{
+    .header-content h1
+    .header-content h1:after
+    {
+        font-size: 50px;
+        letter-spacing: normal;
+    }
+}
+/* end header */
+
+/* start about */
+.about-section
+{
+    background-color:var(--section-color-one);
+    padding-bottom: var(--section-padding);
+}
+.section-header
+{
+    padding-top: var(--section-padding);
+}
+.section-header h2
+{
+    font-size: 80px;
+    opacity: .2;
+    letter-spacing: 15px;
+    font-family: var(--header-font);
+}
+.section-header h3
+{
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 15px;
+    font-family: 'Bebas Neue', cursive ;
+}
+.about-paragraph
+{
+    padding-bottom: var(--section-padding);
+}
+@media (max-width:767px)
+{
+    .row .anitwo
+    
+    {
+        text-align: center;
+    }    
+}
+@media (min-width:767px)
+{
+    .map:hover
+    {
+        transform: scale(1.4);
+    }    
+}
+.map
+{
+    transition: 1s;
+}
+/* end about */
+/* start gallery */
+.pic
+{
+    background-color: rgba(255, 217, 0, 0.466);
+    border-radius: 20px;
+    transition: 1s;
+}
+.img
+{
+    transition: 1s;
+}
+.img:hover
+{
+    transform: scale(1.2);
+}
+.contain
+{
+    padding-top: var(--section-padding);
+}
+.sec
+{
+    margin-bottom:25px;
+    box-shadow: 2px 2px 20px rgba(128, 128, 128, 0.377);
+    transition: 1s;
+}
+.sec:hover
+{
+    background-color: wheat;
+    transform: translatey(-15px);
+}
+/* end gallery */
+/* start holdings */
+.info
+{
+    box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.322);
+    transition: 1s;
+}
+.info:hover
+{
+    background-color: white;
+    transform: translatey(-30px);
+}
+.info.one:hover
+{
+    transform: translatey(30px);
+}
+
+@media (min-width:767px)
+{
+    .info img:hover
+    {
+        transform: scale(1.2);
+    }    
+}
+.info img
+{
+    transition: 1s;
+}
+.info h2
+{   
+    margin-top: 20px;
+    background-color: bisque;
+    padding: 5px;
+}
+p
+{
+    color: var(--paragraph-color);
+}
+/* end holdings */
+/* start sec-tot */
+@media (max-width:767px)
+{
+    .tot-ankh .tot-amon
+    {
+        text-align: center;
+    }    
+}
+.tot-section .section-header h3 span
+{
+    transition: .2s;
+    cursor: pointer;
+}
+.tot-section .section-header h3 span:hover
+{
+    color: orange;
+}
+.tabout
+{
+    position: relative;
+    overflow: hidden;
+}
+.tabout2
+{
+    position:absolute;
+    transform: translateX(350px);
+    transition: 3s;
+}
+.tot-ankh:hover .tabout2
+{
+    transform: none;
+}
+/* end sec-tot */
+/* start contact */
+.contact
+{
+    padding-top: var(--section-padding);
+}
+/* end contact */
+/* start footer */
+footer 
+{
+    background-color: rgba(230, 204, 61, 0.582);
+}
+footer h5
+{
+    padding: 15px;
+    font-size: 16px;
+}
+.col-md-2 .btn
+{
+   background-color: gold;
+}
+.col-md-2 .btn:hover
+{
+    background-color: rgb(95, 71, 10);
+    color: wheat;
+    box-shadow: 2px 2px 20px rgb(255, 153, 0);
+}
+/* end footer */
